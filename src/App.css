@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.gray {
+  color: #918e9b;
+  font-size: 0.64rem;
+  font-weight: 400;
+  line-height: 0.81rem;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.header {
+  display: grid;
+  height: 10vh;
+  place-items: center;
+  background: #f55a5a;
+  color: #fff;
+}
+.header-info {
+  display: flex;
+  justify-content: space-between;
+}
+.header-info--img {
+  width: 24px;
+  height: 24px;
+}
+.header-info--title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: -0.075em;
+  margin-left: 0.4375rem;
+}
+/* 
+==========
+Journal
+=========
+ */
+.section-center {
+  padding: 3rem 2.5rem;
+  max-width: 550px;
+}
+
+.journal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
+}
+.journal-img--container {
+  margin-right: 1.1875rem;
+}
+.journal-img--container > img {
+  width: 125px;
+  height: 168px;
+}
+.journal-info {
+  max-width: 20.375rem;
+  font-size: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 170px;
+  overflow-y: scroll;
+}
+.location--icon {
+  color: #f55a5a;
+}
+
+.travel--country {
+  text-transform: uppercase;
+  color: #2b283a;
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 0.64rem;
+  letter-spacing: 0.17em;
+}
+
+.travel--place {
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 1.9rem;
+  color: #2b283a;
+  padding-bottom: 1rem;
+  padding-top: 0.3rem;
+  text-transform: capitalize;
+}
+
+.travel-period {
+  font-weight: 700;
+  font-size: 0.64rem;
+  line-height: 0.7744rem;
+  padding-bottom: 0.4rem;
+}
+.place--description {
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 0.96rem;
+  color: #2b283a;
+}
+
+@media screen and (min-width: 768px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: max-content;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .section-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
